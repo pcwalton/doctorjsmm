@@ -8,7 +8,8 @@ Firefox). Its output is in Exuberant Ctags format.
 
 DoctorJS-- is neither as precise nor as sophisticated (nor, right now, as
 complete) as its big brother [DoctorJS](http://github.com/mozilla/doctorjs),
-but on the plus side it's designed to be small, clean, and easy to hack.
+but on the plus side it's designed to be small, clean, and easy to hack. If
+you need to do anything sophisticated, please use DoctorJS instead!
 
 To get started, run `make` and then use `bin/jsctags path/to/file.js`. Output
 is written to a `tags` file in the current directory.
