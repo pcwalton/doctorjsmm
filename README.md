@@ -30,8 +30,18 @@ Files of interest:
   representation; you'll almost certainly want to read this if you're modifying
   DoctorJS--.
 
+Major known issues:
+
+* Source file locations aren't tracked. (This is a limitation in `parse-js`.)
+* Prototype chains aren't handled.
+* Array element types aren't tracked.
+* Array expando properties won't be handled correctly.
+* RegExp methods and expando properties won't be handled correctly.
+* Dynamically-computed properties are handled in a bad way.
+* `for in` is missing in the interpreter.
+
 Thanks:
 
-* Brian Hackett for the type inference algorithm
-* Marijn Haverbeke and Mihai Bazon for the `parse-js` module from UglifyJS
+* Brian Hackett for the type inference algorithm.
+* Marijn Haverbeke and Mihai Bazon for the `parse-js` module from UglifyJS.
 
