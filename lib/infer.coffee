@@ -217,7 +217,6 @@ class Interpreter
     findVars: (node, list) ->
         switch node[0]
             when 'var', 'const'
-                console.log "found var"
                 list.push pair[0] for pair in node[1]
             when 'function', 'defun' then return
 
